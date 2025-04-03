@@ -4,6 +4,8 @@
 #
 #    ./scripts/pip-compile.sh
 #
+pip install psycopg2-binary
+
 alembic==1.4.3
     # via
     #   dataset
