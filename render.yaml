@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ctfd
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        value: postgresql://root:IhWCLYennDmLmsx1yIh8WIkZjAuSMuUB@dpg-cvmvufm3jp1c73909vrg-a/ctfd_r9zo
+      - key: UPLOAD_FOLDER
+        value: ./CTFd/uploads
